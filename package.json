@@ -9,6 +9,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
+    "server-install": "npm install --prefix server",
     "client": "npm run dev --prefix client",
     "server": "npm run start --prefix server",
     "dev": "concurrently \"npm run server\" \"npm run client\""
@@ -20,6 +22,7 @@
     "concurrently": "^9.1.2"
   },
   "dependencies": {
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "framer-motion": "^12.15.0"
   }
 }
