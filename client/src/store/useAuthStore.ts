@@ -13,13 +13,15 @@ interface AuthState {
   logout: () => void;
 }
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export const useAuthStore = create<AuthState>((set) => ({
   token: localStorage.getItem('token'),
   user: JSON.parse(localStorage.getItem('user') || 'null'),
 
   register: async (email, password) => {
     try {
-      const res = await fetch('http://localhost:3001/register', {
+      const res = await fetch(`${API_URL}/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -41,7 +43,7 @@ export const useAuthStore = create<AuthState>((set) => ({
 
   login: async (email, password) => {
     try {
-      const res = await fetch('http://localhost:3001/login', {
+      const res = await fetch(`${API_URL}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
