@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "email": "selena@gmail.com",
+      "password": "$2a$10$Wr4ZOqXpj/kvljlz4yenf.0.GvF4iB52oz79BOPuCVIexOrpdkfw6",
+      "id": 1
+    },
+    {
+      "email": "temir@gmail.com",
+      "password": "$2a$10$57BXC74g6KyjN/C.Sx6QOupJYHLooqdAt33kE0O2YEuIggSHr9cCq",
+      "id": 2
+    },
+    {
+      "email": "wife@gmail.com",
+      "password": "$2a$10$2l5Bx7X/zyEQAiKYnvkLuOM7.VW7Mskb56.HQsD8DRrzVGefIso6.",
+      "id": 3
+    },
+    {
+      "email": "jasmin@gmail.com",
+      "password": "$2a$10$c71F.uDOEgLI4ewHl/367uo.HHxEk0X58zjXU38fjhy.RTK4.L8.W",
+      "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "title": "go swimming",
+      "status": "todo",
+      "userId": 3,
+      "id": 1
+    },
+    {
+      "title": "reading",
+      "status": "in-progress",
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "title": "rate",
+      "status": "done",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "getting candy",
+      "status": "todo",
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "title": "playyy",
+      "status": "todo",
+      "userId": 4,
+      "id": 5
+    }
+  ]
+}
